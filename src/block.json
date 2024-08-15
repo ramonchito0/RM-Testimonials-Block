@@ -1,0 +1,55 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "rm-blocks/rm-testimonials-block",
+  "version": "0.1.0",
+  "title": "RM Testimonials",
+  "category": "widgets",
+  "description": "Testimonials Block",
+  "example": {},
+  "attributes": {
+    "headingBlock": {
+      "type": "string"
+    },
+    "style": {
+      "type": "string"
+    },
+    "testimonials": {
+      "type": "array",
+      "default": [],
+      "items": {
+        "type": "object",
+        "properties": {
+          "author": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "subtitle": {
+            "type": "string"
+          },
+          "quote": {
+            "type": "string"
+          },
+          "rating": {
+            "type": "number",
+            "default": 5
+          },
+          "image": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "supports": {
+    "color": {
+      "background": true
+    }
+  },
+  "textdomain": "rm-blocks",
+  "editorScript": "file:./index.js",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php"
+}

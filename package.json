@@ -1,0 +1,36 @@
+{
+  "name": "rm-testimonials",
+  "version": "0.1.0",
+  "description": "This is a Testimonial block",
+  "author": "The WordPress Contributors",
+  "license": "GPL-2.0-or-later",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "wp-scripts build",
+    "format": "wp-scripts format",
+    "lint:css": "wp-scripts lint-style",
+    "lint:js": "wp-scripts lint-js",
+    "packages-update": "wp-scripts packages-update",
+    "plugin-zip": "wp-scripts plugin-zip",
+    "start": "wp-scripts start",
+    "env": "wp-env"
+  },
+  "devDependencies": {
+    "@wordpress/env": "^9.10.0",
+    "@wordpress/scripts": "^27.9.0",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.30",
+    "postcss-import": "^15.1.0",
+    "postcss-nested": "^6.0.1",
+    "postcss-nesting": "^12.0.1",
+    "prettier-plugin-tailwindcss": "^0.5.4",
+    "tailwindcss": "^3.3.2"
+  },
+  "dependencies": {
+    "@wordpress/icons": "^10.5.0",
+    "clsx": "^2.1.1",
+    "postcss-cli": "^10.1.0",
+    "prettier": "^3.3.3",
+    "swiper": "^11.1.9"
+  }
+}
